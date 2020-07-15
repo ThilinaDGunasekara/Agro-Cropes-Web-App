@@ -1,0 +1,64 @@
+<!-- <app-loading-mask *ngIf="loadingMask"></app-loading-mask> -->
+
+<div class="register-container">
+    <div class="row">
+        <div class="col-4">
+            <div class="col-12">
+                <div class="welcome-msg">Register to</div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="col-12">
+                <br>
+                <span class="app-title">Agro Cropes Sales System</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img class="register-brand" style="margin-left: 18%; margin-top: 15%;" src="/assets/images/login-logo.png">
+        </div>
+
+        <div class="col-8">
+
+            <div class="register-container">
+                <form (ngSubmit)="register()">
+                    <div class="row">
+
+                        <div class="form-group" class="col-9">
+                            <input type="text" [(ngModel)]="email" name="email" class="form-control" id="register_email" placeholder="E-mail" style="margin-top: -30px;margin-bottom: 5%;" required>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="form-group" class="col-9">
+                            <input type="password" [(ngModel)]="password" name="password" class="form-control" id="register_password" placeholder="Password" style="margin-top: -30px;margin-bottom: 5%;" required>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <br>
+                            <button type="submit" class="btn btn-primary register-btn" style="margin-top: -50px;">Register</button>
+                        </div>
+                        <div class="col-3">
+                            <div class="register"><a href="#" routerLink="/login">Back To Login</a></div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="form-group">
+                    <p *ngIf="errorMsg.length > 0" class="text-danger">{{errorMsg}}</p>
+
+                    <p *ngIf="error.message.length > 0" class="text-danger">{{error.message}} </p>
+
+                    <p *ngIf="message.length > 0" class="text-info">{{message}} </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

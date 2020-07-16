@@ -8,7 +8,7 @@
 }
 
 .login-brand {
-    width: 500px;
+    width: 390px;
 }
 
 .username {
@@ -32,7 +32,7 @@
 
 .welcome-msg {
     color: #04101a;
-    font-size: 45px;
+    font-size: 35px;
     margin-left: 10%;
     margin-top: 18px;
     padding-left: 20%;
@@ -40,8 +40,8 @@
 
 .app-title {
     color: #04101a;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 60px;
-    margin-left: 5%;
+    margin-left: 13%;
 }

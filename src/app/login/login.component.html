@@ -1,37 +1,25 @@
 <!-- <app-loading-mask *ngIf="loadingMask"></app-loading-mask> -->
 
 <div class="login-container">
+
     <div class="row">
-        <div class="col-4">
-            <div class="col-12">
-                <div class="welcome-msg">Welcome to</div>
-            </div>
-        </div>
-        <div class="col-8">
-            <div class="col-12">
-                <br>
-                <span class="app-title">Agro Cropes Sales System</span>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img class="login-brand" style="margin-left: 18%; margin-top: 15%;" src="/assets/images/login-logo.png">
+        <div class="col-6">
+            <img class="login-brand" style="margin-left: 18%;margin-top: 10%;" src="/assets/images/agro-cropes.png">
         </div>
 
-        <div class="col-8">
+        <div class="col-6">
 
             <div class="login-container">
                 <form (ngSubmit)="login()">
                     <div class="row">
 
-                        <div class="form-group" class="col-9">
+                        <div class="form-group" class="col-10">
                             <input type="text" [(ngModel)]="email" name="email" class="form-control" placeholder="E-mail" style="margin-top: -30px;margin-bottom: 5%;" required>
                         </div>
                         <br>
                         <br>
                         <br>
-                        <div class="form-group" class="col-9">
+                        <div class="form-group" class="col-10">
                             <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password" style="margin-top: -30px;margin-bottom: 5%;" required>
                         </div>
                         <br>
@@ -55,5 +43,21 @@
         </div>
 
     </div>
-
+    <div class="row">
+        <div class="col-4">
+            <div class="col-12">
+                <div class="welcome-msg">Welcome to</div>
+            </div>
+        </div>
+        <div class="col-8"></div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="col-12">
+                <br>
+                <span class="app-title">Agro Cropes Sales System</span>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
 </div>

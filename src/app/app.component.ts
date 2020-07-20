@@ -1,6 +1,7 @@
  import { Component } from '@angular/core';
  import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent {
   itemValue = '';
   items : Observable<any[]>;
 
-  constructor(public db: AngularFireDatabase){
+  constructor(public router: Router, public db: AngularFireDatabase){
     this.items = db.list('items').valueChanges();
   }
 

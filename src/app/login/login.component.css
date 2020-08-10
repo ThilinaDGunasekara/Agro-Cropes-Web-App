@@ -9,6 +9,8 @@
 
 .login-brand {
     width: 390px;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
 .username {
@@ -23,6 +25,7 @@
 
 .login-btn {
     width: 100%;
+    padding: 0%;
 }
 
 .login-input-container {
@@ -33,15 +36,13 @@
 .welcome-msg {
     color: #04101a;
     font-size: 35px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     margin-top: 18px;
-    padding-left: 20%;
 }
 
 .app-title {
     color: #04101a;
-    font-size: 50px;
+    font-size: 49px;
     font-weight: bold;
-    margin-top: 60px;
-    margin-left: 13%;
+    /* margin-left: 10%; */
 }

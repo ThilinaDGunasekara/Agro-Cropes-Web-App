@@ -11,6 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoadingMaskComponent } from './loading-mask/loading-mask.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -18,14 +23,19 @@ import { UserInfoComponent } from './user-info/user-info.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    LoadingMaskComponent,
+    DashboardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    ClarityModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],

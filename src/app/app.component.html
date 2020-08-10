@@ -1,1 +1,36 @@
-<router-outlet></router-outlet>
+<clr-main-container>
+
+    <!-- <clr-header *ngIf="router.url != '/login'">
+        <app-header style="width: 100%"></app-header>
+    </clr-header> -->
+
+    <div class="content-container">
+        <div class="content-area">
+
+            <router-outlet></router-outlet>
+
+        </div>
+        <!-- <clr-vertical-nav [clrVerticalNavCollapsible]="true" *ngIf="router.url != '/login'"
+            [(clrVerticalNavCollapsed)]="collapsed">
+            <a clrVerticalNavLink [routerLink]="['/operational-dashboard']" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="home"></clr-icon>
+                Operational Dashboard
+            </a>
+            <a routerLinkActive="active" clrVerticalNavLink [routerLink]="['/strategic-dashboard']" class="nav-link">
+                <clr-icon clrVerticalNavIcon shape="line-chart" size="24"></clr-icon>Strategic Dashboard
+            </a>
+            <a routerLinkActive="active" clrVerticalNavLink class="nav-link">
+                <clr-icon clrVerticalNavIcon shape="blocks-group" size="24"></clr-icon> Stock Details
+            </a>
+            <a clrVerticalNavLink routerLinkActive="active" [routerLink]="['/user-maintenance']" class="nav-link">
+                <clr-icon clrVerticalNavIcon shape="users" size="24"></clr-icon> User Maintenance
+            </a>
+            <a clrVerticalNavLink routerLinkActive="active" [routerLink]="['/business-structure']" class="nav-link">
+                <clr-icon clrVerticalNavIcon shape="map" size="24"></clr-icon> Business Structure
+            </a>
+            <a clrVerticalNavLink routerLinkActive="active" [routerLink]="['/custom-report']" class="nav-link">
+                <clr-icon clrVerticalNavIcon shape="resource-pool" size="24"></clr-icon> Custom Report
+            </a>
+        </clr-vertical-nav> -->
+    </div>
+</clr-main-container>

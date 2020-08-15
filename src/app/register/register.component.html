@@ -25,13 +25,25 @@
                 <form (ngSubmit)="register()">
                     <div class="row">
 
-                        <div class="form-group" class="col-9">
+                        <div class="form-group" class="col-6">
                             <input type="text" [(ngModel)]="email" name="email" class="form-control" id="register_email" placeholder="E-mail" style="margin-top: -30px;margin-bottom: 5%;" required>
                         </div>
                         <br>
                         <br>
+                        <div class="form-group" class="col-6">
+                            <input type="password" [(ngModel)]="password" name="password" class="form-control" id="register_password" placeholder="Password" style="margin-top: -30px;margin-bottom: 5%;" required>
+                        </div>
                         <br>
-                        <div class="form-group" class="col-9">
+                        <br>
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group" class="col-6">
+                            <input type="text" [(ngModel)]="email" name="email" class="form-control" id="register_email" placeholder="E-mail" style="margin-top: -30px;margin-bottom: 5%;" required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group" class="col-6">
                             <input type="password" [(ngModel)]="password" name="password" class="form-control" id="register_password" placeholder="Password" style="margin-top: -30px;margin-bottom: 5%;" required>
                         </div>
                         <br>
